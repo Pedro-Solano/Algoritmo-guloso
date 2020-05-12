@@ -1,43 +1,46 @@
 #include <stdlib.h>				//malloc, free
 #include <string.h> 				//strlen
 #include "funcoes.h"
-//#include <time.h>				//calculo do tempo de execucao
-//#include <iostream>				//printf
+#include <time.h>				//biblioteca utilizada para o calculo do tempo de execucao
+#include <iostream>				//printf
 
-int main( int argc, char *argv[ ] )		//funcao principal
+
+int main( int argc, char *argv[ ] )		//funcao principal	
 {
-	//clock_t c1, c2;			//variaveis para calcular o
-	//float tempo_guloso, tempo_dinamico;	//o tempo de execucao
+	
+    clock_t c1, c2;				//variaveis para calcular
+    float tempo_guloso, tempo_dinamico;		//o tempo de execucao
 
     int orcamento,qtde_ilhas;
-    int *custos, *pontos;
+    int *custos, *pontos;			//vetores que armzenarao informacoes da ilhas
+	
     char* arquivo = new char(strlen(argv[1]));
-    arquivo=argv[1];
+    arquivo=argv[1];				//armazena o nome do arquivo de entrada na variável "arquivo"
 
-    le_viagem(arquivo,&qtde_ilhas,&orcamento);
+    le_viagem(arquivo,&qtde_ilhas,&orcamento);	//leitura das informacoes iniciais da viagem: orcamento e quantidade de ilhas
 
-    custos=(int*)malloc(qtde_ilhas*sizeof(int));
-    pontos=(int*)malloc(qtde_ilhas*sizeof(int));
+    custos=(int*)malloc(qtde_ilhas*sizeof(int));	//alocacao dinamica do vetor de custos		
+    pontos=(int*)malloc(qtde_ilhas*sizeof(int));	//alocacao dinamica do vetor de pontos
 
-    preenche_ilhas(arquivo,qtde_ilhas,custos,pontos);
+    preenche_ilhas(arquivo,qtde_ilhas,custos,pontos);	//preenche os vetores "custos" e "pontos" a partir da leitura do arquivo de entrada
 
-	//c1=clock();
+    c1=clock();						//marcacao de tempo
 
-    guloso(orcamento,qtde_ilhas,custos,pontos);
+    guloso(orcamento,qtde_ilhas,custos,pontos);		//calcula a viagem conforme o algoritmo guloso
 
-	//c2=clock();
-	//tempo_guloso = (c2-c1*1.0)*1000/CLOCKS_PER_SEC;
-	//printf("Tempo guloso: %f ms.\n",tempo_guloso);
-	//c1=clock();
+    c2=clock();						//marcacao de tempo
+    tempo_guloso = (c2-c1*1.0)*1000/CLOCKS_PER_SEC;	//calcula o tempo de execucao do algoritmo guloso
+    printf("Tempo algoritmo guloso: %f ms.\n",tempo_guloso);
+    c1=clock();						//marcacao de tempo
 
-    dinamico(orcamento,custos,pontos,qtde_ilhas);
+    dinamico(orcamento,custos,pontos,qtde_ilhas);	//calcula a viagem conforme o algoritmo de programacao dinamica
 
-	//c2=clock();
-	//tempo_dinamico = (c2-c1*1.0)*1000/CLOCKS_PER_SEC;
-	//printf("Tempo dinamico: %f ms.\n",tempo_dinamico);
+    c2=clock();
+    tempo_dinamico = (c2-c1*1.0)*1000/CLOCKS_PER_SEC;	//calcula o tempo de execucao do algoritmo de programacao dinamica
+    printf("Tempo algoritmo dinamico: %f ms.\n",tempo_dinamico);
 
-    free(custos);
-    free(pontos);
+    free(custos);		//desalocacao de memoria
+    free(pontos);		//desalocacao de memoria
 
     return 0;
 }
