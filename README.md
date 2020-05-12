@@ -15,7 +15,7 @@ O objetivo deste trabalho é, dados dois valores inteiros N e M, que representam
   (a) a maior pontuação possível em um roteiro no qual sem repetições de ilhas, e;
   (b) a quantidade de dias que durará a viagem. O tempo de execução do seu algoritmo para esse problema não deve ser superior O(n * m).
 
-# Arquivo de entrada:
+## Arquivo de entrada:
 
 As informações sobre o roteiro de viagem são informadas por meio de um arquivo .txt.
 Na primeira linha são dados dois inteiros N e M, que representam o orçamento disponível e a quantidade máxima de ilhas, respectivamente. Nas próximas M linhas, são dados dois inteiros: o primeiro deles, D, representa o custo diário de cada ilha; o segundo, P, representa a pontuação atribuída pelos viajantes àquela ilha.
