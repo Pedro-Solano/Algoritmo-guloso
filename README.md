@@ -24,8 +24,9 @@ Na primeira linha são dados dois inteiros N e M, que representam o orçamento d
 
 ## Saída:
 
-A saída do programa possui 2 linhas, que serão impresssas na tela.
-Na primeira, imprimi-se a pontuação total para o problema 1 (que pode repetir ilhas) e a quantidade de dias que durará a viagem. Na segunda linha, imprime-se a pontuação total para o problema 2 (que não pode repetir ilhas) e a quantidade de dias que durará a viagem.
+A saída do programa possui 2 linhas, que são impressas na tela.
+Na primeira, imprimi-se a pontuação total para o problema 1 (que pode repetir ilhas) e a quantidade de dias que durará a viagem. 
+Na segunda linha, imprime-se a pontuação total para o problema 2 (que não pode repetir ilhas) e a quantidade de dias que durará a viagem.
 
 ## Documentação:
 
