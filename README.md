@@ -1,4 +1,6 @@
-# O problema:
+# Conceito abordado: algoritmos gulosos X programação dinâmica.
+
+## O problema:
 
 Um grupo de viajantes se organiza para fazer uma viagem visitando várias ilhas ao redor do mundo. Dado que o orçamento da viagem é limitado, eles estabeleceram pontos para cada ilha, para indicar o quanto gostariam de visitar determinada ilha. Também calcularam o custo diário para se permanecer em cada ilha (considerando transporte, acomodação e alimentação). Feito isso, eles decidiram analisar dois tipos de roteiro, conforme o orçamento disponível:
 
@@ -15,8 +17,15 @@ O objetivo deste trabalho é, dados dois valores inteiros N e M, que representam
   (a) a maior pontuação possível em um roteiro no qual sem repetições de ilhas, e;
   (b) a quantidade de dias que durará a viagem. O tempo de execução do seu algoritmo para esse problema não deve ser superior O(n * m).
 
-## Arquivo de entrada:
+## Entrada:
 
 As informações sobre o roteiro de viagem são informadas por meio de um arquivo .txt.
 Na primeira linha são dados dois inteiros N e M, que representam o orçamento disponível e a quantidade máxima de ilhas, respectivamente. Nas próximas M linhas, são dados dois inteiros: o primeiro deles, D, representa o custo diário de cada ilha; o segundo, P, representa a pontuação atribuída pelos viajantes àquela ilha.
+
+## Saída:
+
+A saída do programa possui 2 linhas, que serão impresssas na tela.
+Na primeira, imprimi-se a pontuação total para o problema 1 (que pode repetir ilhas) e a quantidade de dias que durará a viagem. Na segunda linha, imprime-se a pontuação total para o problema 2 (que não pode repetir ilhas) e a quantidade de dias que durará a viagem.
+
+## Documentação:
 
