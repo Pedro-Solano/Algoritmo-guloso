@@ -26,7 +26,7 @@ O objetivo deste trabalho é, dados valores inteiros N e M, que representam, res
 As informações sobre o roteiro de viagem são informadas por meio de um arquivo .txt.
 Na primeira linha são dados dois inteiros N e M, que representam o orçamento disponível e a quantidade máxima de ilhas, respectivamente. Nas próximas M linhas, são dados dois inteiros: o primeiro deles, D, representa o custo diário de cada ilha; o segundo, P, representa a pontuação atribuída pelos viajantes àquela ilha.
 
-Exemplo:
+Por exemplo:
 
     6000 5      // <Orçamento disponível> <Qtd Ilhas>
     1000 30     // <custo por dia da ilha 1> <pontuação da ilha 1>
