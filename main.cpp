@@ -30,17 +30,18 @@ int main( int argc, char *argv[ ] )		//funcao principal
 
     c2=clock();						//marcacao de tempo
     tempo_guloso = (c2-c1*1.0)*1000/CLOCKS_PER_SEC;	//calcula o tempo de execucao do algoritmo guloso
-    printf("Tempo algoritmo guloso: %f ms.\n",tempo_guloso);
+    printf("Tempo guloso: %f ms.\n",tempo_guloso);
     c1=clock();						//marcacao de tempo
 
     dinamico(orcamento,custos,pontos,qtde_ilhas);	//calcula a viagem conforme o algoritmo de programacao dinamica
 
     c2=clock();
     tempo_dinamico = (c2-c1*1.0)*1000/CLOCKS_PER_SEC;	//calcula o tempo de execucao do algoritmo de programacao dinamica
-    printf("Tempo algoritmo dinamico: %f ms.\n",tempo_dinamico);
+    printf("Tempo dinamico: %f ms.\n\n",tempo_dinamico);
 
     free(custos);		//desalocacao de memoria
     free(pontos);		//desalocacao de memoria
 
     return 0;
 }
+

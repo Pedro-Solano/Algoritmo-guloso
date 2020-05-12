@@ -12,7 +12,7 @@ FONTES = $(wildcard *.cpp)
 OBJETOS = $(FONTES:.cpp=.o)
 
 #Nome do arquivo executável
-EXECUTAVEL = tp2
+EXECUTAVEL = ilhas
 
 
 all:	$(EXECUTAVEL)

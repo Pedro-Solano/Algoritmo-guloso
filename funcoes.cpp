@@ -164,7 +164,7 @@ void guloso(int saldo, int ilhas, int *custo, int *pts){
         ++i;						//avanca para a proxima ilha
       }
     }
-    cout<<pontuacao<<" "<<n_dias<<endl;	
+    cout<<"\nA pontuacao obtida com o algoritmo guloso foi: "<<pontuacao<<" e a viagem ira durar "<<n_dias<<" dias!"<<endl;	
     free(custoXbeneficio);
 }
 
@@ -198,7 +198,7 @@ void dinamico(int orcamento, int *custos, int *val, int n)
 
     pontuacao = k[n][orcamento];
 
-    cout<<pontuacao<<" ";			//imprime na tela a pontuacao obtida
+    cout<<"\nA pontuacao obtida com o algoritmo dinamico foi: "<<pontuacao;			//imprime na tela a pontuacao obtida
 
     o = orcamento;
 
@@ -216,6 +216,6 @@ void dinamico(int orcamento, int *custos, int *val, int n)
         }
     }
 
-    cout<<n_dias<<endl;				//imprime na tela a duracao da viagem
+    cout<<" e a viagem ira durar "<<n_dias<<" dias!"<<endl;				//imprime na tela a duracao da viagem
 }
 
