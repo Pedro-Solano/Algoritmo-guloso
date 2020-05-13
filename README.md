@@ -1,5 +1,7 @@
 # Algoritmos gulosos e programação dinâmica
 
+Projeto da disciplina Algoritmos 1, do curso de bacharelado em Sistemas da Informação da Universidade Federal de Minas Gerais - UFMG.
+
 ## Objetivo
 
 Esse trabalho visa comparar as complexidades de espaço e de tempo entre um algoritmo guloso e um algoritmo de programação dinâmica.
